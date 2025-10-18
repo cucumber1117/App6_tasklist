@@ -4,16 +4,21 @@ import Home from './pages/Home/Home.jsx';
 import List from './pages/List/List.jsx';
 import Settings from './pages/Settings/Settings.jsx';
 import Create from './pages/Create/Create.jsx';
+import About from './pages/About/About.jsx';
 import Footer from './components/Footer.jsx';
 import './components/Footer.css';
+import Header from './components/Header.jsx';
+import './components/Header.css';
 
 function App() {
   return (
     <>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
   <Route path="/list" element={<List />} />
   <Route path="/create" element={<Create />} />
+  <Route path="/about" element={<About />} />
   <Route path="/settings" element={<Settings />} />
       </Routes>
       <Footer />

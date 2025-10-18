@@ -1,0 +1,14 @@
+.app-header{
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 40;
+  padding: 8px 12px;
+}
+.header-left{ display:flex; align-items:center; gap:8px; max-width:720px; margin:0 auto }
+.app-icon{ background:transparent; border:none; padding:4px; display:inline-flex; align-items:center }
+.app-icon img{ width:32px; height:32px }
+.app-title{ font-weight:600 }
+.info-overlay{ position:fixed; inset:0; background:rgba(0,0,0,0.4); display:flex; align-items:center; justify-content:center }
+.info-card{ background:#fff; padding:20px; border-radius:8px; max-width:480px; width:90% }

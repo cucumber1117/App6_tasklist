@@ -41,8 +41,12 @@ export function TaskProvider({ children }) {
     setTasks((t) => t.filter((task) => task.id !== id));
   }, []);
 
+  const updateTask = useCallback((id, fields) => {
+    setTasks((t) => t.map((task) => (task.id === id ? { ...task, ...fields } : task)));
+  }, []);
+
   return (
-    <TaskContext.Provider value={{ tasks, addTask, toggleDone, removeTask }}>
+    <TaskContext.Provider value={{ tasks, addTask, toggleDone, removeTask, updateTask }}>
       {children}
     </TaskContext.Provider>
   );

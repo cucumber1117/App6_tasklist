@@ -1,22 +1,104 @@
-.home{
-  max-width: 720px;
-  margin: 48px auto;
-  padding: 24px;
-}
-.title{
-  font-size: 28px;
-  margin-bottom: 16px;
-  text-align: center;
+.home {
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 80px;
+  font-family: "SF Pro Display", sans-serif;
 }
 
-.empty{
-  color: #666;
-  text-align: center;
-  margin-top: 12px;
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
 }
 
-.home h3{
+.month-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.weekday-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 8px;
+}
+
+.weekday-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40px;
+  cursor: pointer;
+  padding: 4px 0;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.weekday-item:hover {
+  background-color: #f1f1f1;
+}
+
+.weekday-item.selected {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+
+.weekday-label {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.weekday-date {
   font-size: 16px;
-  color: #333;
-  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.selected-date {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.time-list {
+  border-top: 1px solid #ddd;
+}
+
+.time-row {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #eee;
+  min-height: 40px;
+}
+
+.time-label {
+  width: 60px;
+  font-size: 12px;
+  color: #999;
+  padding: 4px;
+  text-align: right;
+}
+
+.task-cell {
+  flex: 1;
+  padding: 4px 8px;
+}
+
+.empty {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 12px;
 }
